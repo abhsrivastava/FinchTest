@@ -2,14 +2,13 @@ package com.abhi.tests.service
 
 import com.abhi.endpoint.HelloEndpoint
 import com.abhi.models.HelloRequest
-import io.finch._
-import org.scalatest.{FunSpec, Matchers}
-import io.circe._
-import io.circe.generic.auto._
-import io.circe.parser._
-import io.circe.syntax._
-import org.scalatest.matchers._
 import com.twitter.io.Buf
+import io.circe.generic.auto._
+import io.circe.syntax._
+import io.finch._
+import io.finch.circe.jacksonSerializer._
+import org.scalatest.{FunSpec, Matchers}
+
 /**
   * Created by ASrivastava on 11/23/17.
   */

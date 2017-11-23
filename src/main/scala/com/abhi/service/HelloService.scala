@@ -1,11 +1,11 @@
 package com.abhi.service
 
+import com.abhi.endpoint.HelloEndpoint
 import com.twitter.finagle.Http
 import com.twitter.util.Await
-import com.abhi.endpoint.HelloEndpoint
-import io.finch._
-import io.finch.circe._
 import io.circe.generic.auto._
+import io.finch._
+import io.finch.circe.jacksonSerializer._
 
 /**
   * Created by ASrivastava on 11/23/17.

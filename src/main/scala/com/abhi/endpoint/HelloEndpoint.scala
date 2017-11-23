@@ -5,10 +5,10 @@ package com.abhi.endpoint
   * Created by ASrivastava on 11/23/17.
   */
 
-import io.finch._
-import io.finch.circe._
-import io.circe.generic.auto._
 import com.abhi.models._
+import io.circe.generic.auto._
+import io.finch._
+import io.finch.circe.jacksonSerializer._
 
 object HelloEndpoint {
    val all = sayHello :+: sayBye
